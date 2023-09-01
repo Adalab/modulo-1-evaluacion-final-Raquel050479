@@ -1,7 +1,66 @@
-.page__header{
-    width: 100vw;
-    height: 50vh; /*poner medida pantalla completa*/
-    background-image: url(../images/cover.jpeg);
-    background-size: cover;
-   
+
+.ico-menu {
+  background-color: white;
+  width: 20vw;
+  height: 20vh;
+  top: 0;
+  left: 0;
+  position: sticky;
+  z-index: 100;
 }
+.ico {
+  padding: 0.5rem;
+}
+
+.container_main {
+  background-image: url(../images/cover.jpeg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+
+  .h1{
+    color: $white;
+    text-transform: uppercase;
+    font-family: $font-title;
+    font-size: 5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .h1::first-line{
+    word-spacing: 100vw;
+  }
+
+  .text-header{
+    color: $white;
+    font-family: $font-main;
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+  }
+
+  .ico-scroll-down{
+    width: 2rem ;
+
+    .ico{
+
+      background-color: white;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+}
+}
+
+/*debe estar maquetado con Flexbox y debe ocupar
+el alto de la ventana del navegador*/

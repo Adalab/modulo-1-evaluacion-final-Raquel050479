@@ -1,7 +1,67 @@
-.page__footer {
-  background-color: #4a4a4a;
-  color: white;
-  .cuore{
+.footer {
+  background-color: $color-footer;
+  font-family: $font-main;
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .arrow-link{
+    background-color: white;
+    width: 5rem;
+    height: 5rem;
+    line-height: 50px;
+    align-items: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+ 
+    .arrow{
+      width: 2.5rem;
+
+    margin: 12px;
+   
+    }
+}
+
+.rrss{
+  margin-top: 2rem;
+}
+  .main__list {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    text-transform: uppercase;
+
+    text-align: center;
+    font-size: 1.5rem;
+
+    .list{
+      padding-top: 1rem;
+    }
+
+  }
+
+  .copy {
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .copy::first-line {
+    word-spacing: 100vw;
+
+}
+
+  .cuore {
     color: #6c933e;
+
   }
 }
+
+/* se debe maquetar usando flexbox. Todos los textos de la columna
+"ZAPATILLAS" y todos los textos de la columna "TWITTER" deben ser enlaces a la página de
+Adalab.
+*/

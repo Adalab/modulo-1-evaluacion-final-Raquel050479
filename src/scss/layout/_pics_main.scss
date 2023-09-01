@@ -1,0 +1,49 @@
+/*los 3 elementos del listado deben estar maquetados con CSS Grid en
+todos los tamaños de pantalla en los que se necesite*/
+
+.pic_section {
+  background-color: $color-main;
+  height: 50vh;
+  display: grid;
+  grid-row: 3;
+
+
+  .span_pics {
+    color: #626262;
+    font-family: $font-main;
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .title_pics_main {
+    font-family: $font-title;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .image {
+    width: 114px;
+    height: 120;
+    border-radius: 50%;
+    box-shadow: 0  4px 4px 0  rgba(0, 0, 0, 0.25);
+  }
+  .h3 {
+    text-transform: capitalize;
+  }
+
+  .button_pics {
+    margin: 2rem;
+
+    .button {
+      background-color: $green;
+      text-transform: capitalize;
+      color: white;
+      padding: 10px;
+      font-size: 2rem;
+      font-family: $font-main;
+      border-radius: 25%;
+      border: 0;
+    }
+  }
+}
