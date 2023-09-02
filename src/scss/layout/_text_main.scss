@@ -1,3 +1,31 @@
 /*se puede maquetar usando las propiedades de CSS que se
 deseen.
 */
+.text_section{
+
+    margin: 2rem;
+    .span_text{
+        font-family: $font-main;
+        color: $green;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+       
+    }
+    
+    .title_pics_main{
+        font-family: $font-title;
+        color: $negro;
+        text-transform: uppercase;
+        font-size: 2rem;
+        margin: 1.5rem 0;
+    }
+    
+    .text{
+        font-family: $font-main;
+        color: $color-footer;
+        font-size: 1.7rem;
+        line-height: 30px;
+        text-align: left;
+
+    }
+}

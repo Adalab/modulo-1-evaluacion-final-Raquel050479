@@ -1,15 +1,11 @@
-
 .ico-menu {
-  background-color: white;
-  width: 20vw;
-  height: 20vh;
+  background-color: $green;
   top: 0;
   left: 0;
-  position: sticky;
+  position: fixed;
   z-index: 100;
-}
-.ico {
-  padding: 0.5rem;
+  padding: 1.5rem;
+
 }
 
 .container_main {
@@ -21,45 +17,46 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
-
 
   .h1{
     color: $white;
     text-transform: uppercase;
     font-family: $font-title;
-    font-size: 5rem;
-    margin-bottom: 20px;
+    font-size: 4rem;
+    margin: 3rem;
     text-align: center;
-  }
+    line-height: 70px;
+    
+    .h1::first-line{
+      word-spacing: 100vw;
+    }
 
-  .h1::first-line{
-    word-spacing: 100vw;
   }
 
   .text-header{
     color: $white;
     font-family: $font-main;
     font-size: 2rem;
-    margin: 2rem;
+    line-height: 30px;
+    margin: 2rem 9rem;
     text-align: center;
   }
 
+  .ico{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+
+  }
+
   .ico-scroll-down{
-    width: 2rem ;
+    background-color: white;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 10px;
 
-    .ico{
-
-      background-color: white;
-      width: 4rem;
-      height: 4rem;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-      -ms-border-radius: 50%;
-      -o-border-radius: 50%;
-    }
-}
+  }
 }
 
 /*debe estar maquetado con Flexbox y debe ocupar
