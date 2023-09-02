@@ -23,9 +23,30 @@ deseen.
     .text{
         font-family: $font-main;
         color: $color-footer;
+        margin-bottom: 2rem;
         font-size: 1.7rem;
         line-height: 30px;
         text-align: left;
 
     }
+
+    .button {
+        margin-top: 2rem;
+    
+        .button_text {
+          background-color: $white;
+          text-transform: capitalize;
+          color: $green;
+          padding: 1.5rem 4rem;
+          font-size: 2rem;
+          font-family: $font-main;
+          border: solid $green 2px;
+          line-height: 20px;
+          border-radius: 25px;
+          -webkit-border-radius: 25px;
+          -moz-border-radius: 25px;
+          -ms-border-radius: 25px;
+          -o-border-radius: 25px;
+}
+      }
 }

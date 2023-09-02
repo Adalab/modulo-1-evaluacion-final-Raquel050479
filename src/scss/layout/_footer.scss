@@ -7,6 +7,13 @@
   justify-content: center;
   align-items: center;
 
+  @media (min-width: 768px) {
+   
+      flex-direction: row;
+      
+    
+  }
+
   .arrow-link {
     background-color: white;
     width: 5rem;
@@ -34,6 +41,7 @@
 
     .list {
       padding-top: 1rem;
+      line-height: 25px;
     }
   }
 
@@ -42,6 +50,16 @@
     text-align: center;
     font-size: 1.5rem;
     color: white;
+    font-family: $font-main;
+    line-height: 25px;
+
+   /* @media (min-width: 768px) {
+   
+      order: -1;
+      align-items: flex-start;
+      
+    ¡HACER ESTO!
+  } */
   }
 
   .copy::first-line {
@@ -50,6 +68,7 @@
 
   .cuore {
     color: #6c933e;
+    font-size: 1.5rem;
   }
 }
 

@@ -3,15 +3,21 @@ todos los tamaños de pantalla en los que se necesite*/
 
 .pic_section {
   background-color: $color-main;
-  height: 50vh;
   display: grid;
   grid-row: 3;
+  justify-items: center;
+  padding: 2rem;
 
+ /* @media (min-width: 768px){
+
+    FALTA ESTO
+
+  }*/
 
   .span_pics {
     color: #626262;
-    font-family: $font-main;
-    font-size: 1rem;
+    font-family: $font-title;
+    font-size: 1.2rem;
     text-align: center;
   }
 
@@ -22,28 +28,47 @@ todos los tamaños de pantalla en los que se necesite*/
     text-align: center;
   }
 
-  .image {
-    width: 114px;
-    height: 120;
-    border-radius: 50%;
-    box-shadow: 0  4px 4px 0  rgba(0, 0, 0, 0.25);
-  }
-  .h3 {
-    text-transform: capitalize;
+  .pic_div{
+    margin: 1.5rem;
+
+    .image {
+      width: 130px;
+      /*height: 120;*/
+      border-radius: 50%;
+      box-shadow: 0  4px 4px 0  rgba(0, 0, 0, 0.25);
+    }
+   
+    .h3{
+      font-size: $font-title;
+      font-size: 1.6rem;
+      text-align: center;
+      margin-top: 0.5rem;
+
+    }
+    
+    .h3::first-letter{
+      text-transform: uppercase;
+    }
+
   }
 
-  .button_pics {
-    margin: 2rem;
+  .button {
+    margin-bottom:2rem;
 
-    .button {
+
+    .button_pics {
       background-color: $green;
-      text-transform: capitalize;
       color: white;
-      padding: 10px;
+      padding: 1.5rem 2.5rem;
       font-size: 2rem;
       font-family: $font-main;
-      border-radius: 25%;
-      border: 0;
-    }
+      border-style: none;
+      line-height: 20px;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+}
   }
 }
