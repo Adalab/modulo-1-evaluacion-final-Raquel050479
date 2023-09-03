@@ -1,52 +1,106 @@
 /*se puede maquetar usando las propiedades de CSS que se
 deseen.
 */
-.text_section{
+.text_section {
+  margin: 2rem;
 
-    margin: 2rem;
-    .span_text{
-        font-family: $font-main;
-        color: $green;
-        text-transform: uppercase;
-        font-size: 1.5rem;
-       
-    }
-    
-    .title_pics_main{
-        font-family: $font-title;
-        color: $negro;
-        text-transform: uppercase;
-        font-size: 2rem;
-        margin: 1.5rem 0;
-    }
-    
-    .text{
-        font-family: $font-main;
-        color: $color-footer;
-        margin-bottom: 2rem;
-        font-size: 1.7rem;
-        line-height: 30px;
-        text-align: left;
+  @media (min-width: 768px) {
+    margin: 4rem;
+  }
 
+  @media (min-width: 1200px) {
+    margin: 4rem 16rem;
+  }
+
+  .p_text {
+    font-family: $font-main;
+    color: $green;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-top: 4rem;
+
+    @media (min-width: 768px) {
+      font-size: 1.7rem;
+    }
+  }
+
+  .title_pics_main {
+    font-family: $font-title;
+    color: $negro;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    margin: 1rem 0;
+
+    @media (min-width: 768px) {
+      font-size: 3.3rem;
+    }
+  }
+
+  .text {
+    font-family: $font-main;
+    color: $color-footer;
+    margin-bottom: 5rem;
+    font-size: 1.8rem;
+    line-height: 30px;
+    text-align: left;
+
+    @media (min-width: 768px) {
+      font-size: 2rem;
+      margin-bottom: 3rem;
     }
 
-    .button {
-        margin-top: 2rem;
-    
-        .button_text {
-          background-color: $white;
-          text-transform: capitalize;
-          color: $green;
-          padding: 1.5rem 4rem;
-          font-size: 2rem;
-          font-family: $font-main;
-          border: solid $green 2px;
-          line-height: 20px;
-          border-radius: 25px;
-          -webkit-border-radius: 25px;
-          -moz-border-radius: 25px;
-          -ms-border-radius: 25px;
-          -o-border-radius: 25px;
-}
+    @media (min-width: 1200px) {
+      margin-top: 2rem;
+      margin-bottom: 4rem;
+    }
+  }
+
+  .button {
+    margin-top: 2rem;
+
+    .button_text {
+      background-color: $white;
+      text-transform: capitalize;
+      color: $green;
+      padding: 1.2rem 4rem;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: $font-main;
+      border: solid $green 2px;
+      line-height: 20px;
+      border-radius: 25px;
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      -o-border-radius: 25px;
+      transition: none;
+
+      @media (min-width: 768px) {
+        margin-bottom: 3rem;
       }
+
+      @media (min-width: 1200px) {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    @media (hover: hover) {
+      .button_text:hover {
+        background-color: $green;
+        color: $white;
+        box-shadow: 1px 4px 3px rgba(111, 35, 146, 0.4);
+        transform: translate(5rem, 0);
+        transition: background-color 2s ease-in-out;
+        -webkit-transition: background-color 2s ease-in-out;
+        -moz-transition: background-color 2s ease-in-out;
+        -ms-transition: background-color 2s ease-in-out;
+        -o-transition: background-color 2s ease-in-out;
+        -webkit-transform: translate(5rem, 0);
+        -moz-transform: translate(5rem, 0);
+        -ms-transform: translate(5rem, 0);
+        -o-transform: translate(5rem, 0);
+      }
+    }
+  }
 }
