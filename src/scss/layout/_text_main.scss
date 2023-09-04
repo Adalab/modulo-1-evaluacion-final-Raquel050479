@@ -74,7 +74,19 @@ deseen.
       -moz-border-radius: 25px;
       -ms-border-radius: 25px;
       -o-border-radius: 25px;
-      transition: none;
+      transition: color;
+
+      &:hover {
+        background-color: $green;
+        color: $white;
+        box-shadow: 1px 4px 3px rgba(111, 35, 146, 0.4);
+        transform: translate(5rem, 0);
+        transition: background-color 2s ease;
+        -webkit-transition: background-color 2s ease;
+        -moz-transition: background-color 2s ease;
+        -ms-transition: background-color 2s ease;
+        -o-transition: background-color 2s ease;
+      }
 
       @media (min-width: 768px) {
         margin-bottom: 3rem;
@@ -82,24 +94,6 @@ deseen.
 
       @media (min-width: 1200px) {
         margin-bottom: 2.5rem;
-      }
-    }
-
-    @media (hover: hover) {
-      .button_text:hover {
-        background-color: $green;
-        color: $white;
-        box-shadow: 1px 4px 3px rgba(111, 35, 146, 0.4);
-        transform: translate(5rem, 0);
-        transition: background-color 2s ease-in-out;
-        -webkit-transition: background-color 2s ease-in-out;
-        -moz-transition: background-color 2s ease-in-out;
-        -ms-transition: background-color 2s ease-in-out;
-        -o-transition: background-color 2s ease-in-out;
-        -webkit-transform: translate(5rem, 0);
-        -moz-transform: translate(5rem, 0);
-        -ms-transform: translate(5rem, 0);
-        -o-transform: translate(5rem, 0);
       }
     }
   }

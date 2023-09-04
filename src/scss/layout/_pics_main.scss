@@ -98,10 +98,8 @@ todos los tamaños de pantalla en los que se necesite*/
       -ms-border-radius: 25px;
       -o-border-radius: 25px;
       transition: none;
-    }
 
-    @media (hover: hover) {
-      .button_pics:hover {
+      &:hover {
         background-color: blueviolet;
         transform: translate(5rem, 0);
         transform: scale(1.1);
